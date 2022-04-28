@@ -1,4 +1,4 @@
-Spotty support for string functions.  The variations of the assignment to `env_base` should all fail:
+Spotty support for string functions.  The variations of the assignment to `env_base` should all fail, but do not:
 
 * `env_base = split("-", env)[0]`
 * `env_base = regex("^[^-]+", var.env)`

@@ -1,0 +1,1 @@
+Contrived example of string function evaluation.  This should fail, but does passes erroneously.
