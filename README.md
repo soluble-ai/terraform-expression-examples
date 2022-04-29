@@ -12,4 +12,6 @@ The `local*` examples set the ingress cidr_block via lookup in a `locals` table.
 
 The `func*` examples use string functions.  Checkov does not support these functions well.
 
+The `quotedsecgroup` example contains an `aws_security_group`.  Checkov does not support expression evaultion in the nested repeating `ingress` or `egress` strucutres.
+
 If the example contains a `.tfvars` file that file can be used to make the example pass or fail.  (Run either `checkov` or `soluble` with the `--var-file` option, e.g. `soluble tf-scan -d . --var-file pass.tfvars`.)
